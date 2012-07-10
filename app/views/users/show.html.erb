@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>الإسم:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>البريد الإلكتروني:</b>
+  <%= @user.email %>
+</p>
+
+
+<%= link_to 'تعديل', edit_user_path(@user) %> |
+<%= link_to 'رجوع', users_path %>
